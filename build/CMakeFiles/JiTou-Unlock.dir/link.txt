@@ -1,0 +1,3 @@
+C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\JiTou-Unlock.dir/objects.a
+C:\Qt\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\JiTou-Unlock.dir/objects.a @CMakeFiles\JiTou-Unlock.dir\objects1.rsp
+C:\Qt\Tools\mingw1120_64\bin\g++.exe  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -mwindows -Wl,--whole-archive CMakeFiles\JiTou-Unlock.dir/objects.a -Wl,--no-whole-archive -o JiTou-Unlock.exe -Wl,--out-implib,libJiTou-Unlock.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\JiTou-Unlock.dir\linkLibs.rsp

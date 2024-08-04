@@ -1,0 +1,50 @@
+[
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\JiTou-Unlock_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\build\\JiTou-Unlock_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/JiTou-Unlock_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/JiTou-Unlock_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\main.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\main.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/main.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\mainwindow.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\mainwindow.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/mainwindow.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/mainwindow.cpp.obj"
+},
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\devicemanager.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\devicemanager.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/devicemanager.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/devicemanager.cpp.obj"
+},
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\utils.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\utils.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/utils.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/utils.cpp.obj"
+},
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\CreateBackup.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\CreateBackup.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/CreateBackup.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/CreateBackup.cpp.obj"
+},
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\plistmanager.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\plistmanager.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/plistmanager.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/plistmanager.cpp.obj"
+},
+{
+  "directory": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/JiTou-Unlock.dir/includes_CXX.rsp  -mno-ms-bitfields -malign-double -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\JiTou-Unlock.dir\\JiTou-Unlock_autogen\\EWIEGA46WW\\qrc_resources.cpp.obj -c C:\\Users\\mizhijitou\\Desktop\\JiTou-Unlock-master\\build\\JiTou-Unlock_autogen\\EWIEGA46WW\\qrc_resources.cpp",
+  "file": "C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/JiTou-Unlock_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "output": "CMakeFiles/JiTou-Unlock.dir/JiTou-Unlock_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+}
+]

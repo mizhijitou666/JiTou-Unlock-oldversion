@@ -1,0 +1,118 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(JiTou-Unlock VERSION 0.1 LANGUAGES CXX)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+#include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+set(CMAKE_PREFIX_PATH "C:\\Qt\\6.7.0\\mingw_64\\")
+
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
+find_package(Qt6Network REQUIRED)
+
+set(app_icon_resource_windows "${CMAKE_CURRENT_SOURCE_DIR}/cowlite.rc")
+#   qt_add_executable(photosurfaceexample main.cpp ${app_icon_resource_windows})
+
+set(TS_FILES CowabungaLite_en_US.ts)
+set(QRC_FILES resources.qrc)
+
+set(PROJECT_SOURCES
+        main.cpp
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
+        devicemanager.h
+        devicemanager.cpp
+        utils.h
+        utils.cpp
+        CreateBackup.h
+        CreateBackup.cpp
+        plistmanager.h
+        plistmanager.cpp
+        ${TS_FILES}
+        ${QRC_FILES}
+)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mno-ms-bitfields -malign-double")
+
+if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    qt_add_executable(JiTou-Unlock
+        MANUAL_FINALIZATION
+        ${PROJECT_SOURCES}
+        ${app_icon_resource_windows}
+    )
+# Define target properties for Android with Qt 6 as:
+#    set_property(TARGET CowabungaLite APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
+# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
+
+    qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
+else()
+    if(ANDROID)
+        add_library(JiTou-Unlock SHARED
+            ${PROJECT_SOURCES}
+        )
+# Define properties for Android with Qt 5 after find_package() calls as:
+#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+    else()
+        add_executable(JiTou-Unlock
+            ${PROJECT_SOURCES}
+        )
+    endif()
+
+    qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
+endif()
+
+target_link_libraries(JiTou-Unlock PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(JiTou-Unlock PRIVATE Qt6::Network)
+
+set_target_properties(JiTou-Unlock PROPERTIES
+    MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE TRUE
+)
+
+# Copy preset files to the output directory
+set(FILES_PATH "${CMAKE_CURRENT_SOURCE_DIR}/files")
+file(COPY ${FILES_PATH} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+
+# Copy the DLL files to the output directory
+set(DLL_PATH "${CMAKE_CURRENT_SOURCE_DIR}/dll")
+set(EXE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/exe")
+target_include_directories(JiTou-Unlock PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+if(WIN32)
+    file(GLOB EXE_FILES "${EXE_PATH}/*.exe")
+    file(GLOB DLL_FILES "${DLL_PATH}/*.dll")
+    file(COPY ${EXE_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+    file(COPY ${DLL_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+    target_link_libraries(JiTou-Unlock PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/libimobiledevice-1.0.dll")
+    target_link_libraries(JiTou-Unlock PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/libplist-2.0.dll")
+    target_link_libraries(JiTou-Unlock PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/libplist++-2.0.dll")
+    target_link_libraries(JiTou-Unlock PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/libssl-3-x64.dll")
+    target_link_libraries(JiTou-Unlock PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/libcrypto-3-x64.dll")
+elseif(APPLE)
+    file(GLOB DYLIB_FILES "${DLL_PATH}/*.dylib")
+    file(COPY ${DYLIB_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+elseif(UNIX)
+    file(GLOB SO_FILES "${DLL_PATH}/*.so")
+    file(COPY ${SO_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+endif()
+
+install(TARGETS JiTou-Unlock
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_finalize_executable(JiTou-Unlock)
+endif()

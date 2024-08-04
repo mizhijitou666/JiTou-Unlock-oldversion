@@ -1,0 +1,8 @@
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/JiTou-Unlock.dir
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/edit_cache.dir
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/rebuild_cache.dir
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/list_install_components.dir
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/install.dir
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/install/local.dir
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/install/strip.dir
+C:/Users/mizhijitou/Desktop/JiTou-Unlock-master/build/CMakeFiles/JiTou-Unlock_autogen.dir
