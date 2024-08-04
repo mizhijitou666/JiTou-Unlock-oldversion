@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-7ee6407536994a0ad84777caaa014588 CMakeFiles/JiTou-Unlock_autogen
-256672fbaa76af954c6dcbc20fab5458 JiTou-Unlock_autogen/EWIEGA46WW/qrc_resources.cpp
